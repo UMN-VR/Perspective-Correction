@@ -1,0 +1,42 @@
+Correcting perspective for image: photos/20230517crop1009.jpg
+
+Number of components: 2
+Component 0: 1042204
+Component 1: 1277904
+
+Area of each component: [1042204, 1277904]
+Largest component: 1
+
+
+Number of contours: 1
+Contour 0: 912 points, area: 1279709.0
+Largest contour: 912 points, area: 1279709.0
+
+
+Rectangle: ((505.29827880859375, 1020.9031982421875), (758.5690307617188, 1756.7166748046875), 0.4735080897808075)
+
+
+Bounding box: 
+[[ 133.28563  139.44038]
+ [ 891.82874  145.70935]
+ [ 877.3109  1902.366  ]
+ [ 118.76781 1896.097  ]]
+
+Output width: 600
+ Output height: 1410
+ Output size: (600, 1410)
+
+Destination points: 
+[[  50.   50.]
+ [ 549.   50.]
+ [ 549. 1359.]
+ [  50. 1359.]]
+
+Perspective transformation matrix: 
+[[ 6.57795054e-01  5.43632222e-03 -3.84326708e+01]
+ [-6.15798904e-03  7.45114638e-01 -5.30783000e+01]
+ [-3.43467144e-11 -5.67752865e-13  1.00000000e+00]]
+
+Real image: (2021, 1148, 3)
+Warped image: (1410, 600, 3)
+Successfully processed and saved image: 20230517crop1009.jpg

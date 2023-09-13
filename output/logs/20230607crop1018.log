@@ -1,0 +1,108 @@
+Correcting perspective for image: photos/20230607crop1018.jpg
+
+Number of components: 68
+Component 0: 1630348
+Component 1: 491
+Component 2: 73
+Component 3: 251
+Component 4: 1328733
+Component 5: 42
+Component 6: 108
+Component 7: 137
+Component 8: 55
+Component 9: 45
+Component 10: 541
+Component 11: 307
+Component 12: 100
+Component 13: 34
+Component 14: 1295
+Component 15: 1698
+Component 16: 43
+Component 17: 35
+Component 18: 25
+Component 19: 61
+Component 20: 628
+Component 21: 46
+Component 22: 93
+Component 23: 112
+Component 24: 64
+Component 25: 41
+Component 26: 71
+Component 27: 83
+Component 28: 60
+Component 29: 411
+Component 30: 75
+Component 31: 57
+Component 32: 55
+Component 33: 35
+Component 34: 232
+Component 35: 35
+Component 36: 1523
+Component 37: 25
+Component 38: 35
+Component 39: 97
+Component 40: 36
+Component 41: 227
+Component 42: 35
+Component 43: 106
+Component 44: 6243
+Component 45: 49
+Component 46: 35
+Component 47: 149
+Component 48: 1164
+Component 49: 1237
+Component 50: 2308
+Component 51: 40
+Component 52: 30
+Component 53: 54
+Component 54: 41
+Component 55: 61
+Component 56: 75
+Component 57: 54
+Component 58: 70
+Component 59: 46
+Component 60: 75
+Component 61: 91
+Component 62: 416
+Component 63: 90
+Component 64: 63
+Component 65: 1863
+Component 66: 82
+Component 67: 56
+
+Area of each component: [1630348, 491, 73, 251, 1328733, 42, 108, 137, 55, 45, 541, 307, 100, 34, 1295, 1698, 43, 35, 25, 61, 628, 46, 93, 112, 64, 41, 71, 83, 60, 411, 75, 57, 55, 35, 232, 35, 1523, 25, 35, 97, 36, 227, 35, 106, 6243, 49, 35, 149, 1164, 1237, 2308, 40, 30, 54, 41, 61, 75, 54, 70, 46, 75, 91, 416, 90, 63, 1863, 82, 56]
+Largest component: 4
+
+
+Number of contours: 1
+Contour 0: 955 points, area: 1326447.5
+Largest contour: 955 points, area: 1326447.5
+
+
+Rectangle: ((548.6544799804688, 1041.095458984375), (783.0908203125, 1761.7371826171875), 2.4105124473571777)
+
+
+Bounding box: 
+[[ 194.50395  144.53833]
+ [ 976.90186  177.47437]
+ [ 902.805   1937.6526 ]
+ [ 120.40711 1904.7166 ]]
+
+Output width: 600
+ Output height: 1410
+ Output size: (600, 1410)
+
+Destination points: 
+[[  50.   50.]
+ [ 549.   50.]
+ [ 549. 1359.]
+ [  50. 1359.]]
+
+Perspective transformation matrix: 
+[[ 6.36654682e-01  2.68007512e-02 -7.77055877e+01]
+ [-3.12505524e-02  7.42359139e-01 -5.12209945e+01]
+ [ 1.39431996e-12 -1.65317514e-11  1.00000000e+00]]
+
+Real image: (2021, 1476, 3)
+Warped image: (1410, 600, 3)
+Successfully processed and saved image: 20230607crop1018.jpg

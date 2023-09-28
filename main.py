@@ -1,6 +1,6 @@
 import os
 import cv2
-from logger import Logger
+from Logger import Logger
 import numpy as np
 
 def order_points(pts):
@@ -28,6 +28,7 @@ def order_points(pts):
 
 def correct_perspective(mask_img_path, real_img_path, logger, aspect_ratio=2.35, padding=50):
 
+    print('Correcting perspective for image: ' + real_img_path)
     logger.info(f'Correcting perspective for image: {real_img_path}\n')
 
     # Load the mask image
@@ -126,6 +127,40 @@ def correct_perspective(mask_img_path, real_img_path, logger, aspect_ratio=2.35,
 
     # Load the real image
     real_img = cv2.imread(real_img_path, cv2.IMREAD_COLOR)
+    real_img_name = os.path.basename(real_img_path)
+
+
+
+
+
+    # Illustation code
+
+    # Illustration image
+    illustration_img = real_img.copy()
+
+    # Draw the rectangle on the real image for illustration
+    cv2.drawContours(illustration_img, [box.astype("int")], -1, (0, 255, 0), 3)
+
+
+    # draw the mask on the real image for illustration
+    cv2.drawContours(illustration_img, [cnt.astype("int")], -1, (0, 0, 255), 3)
+
+
+
+    # warp the illustration image
+    illustration_img = cv2.warpPerspective(illustration_img, M, output_size
+
+    # Save the illustration image
+
+    os.makedirs('output/rect', exist_ok=True)
+    cv2.imwrite(os.path.join('output/rect', 'Illustration_' + real_img_name), illustration_img)
+
+    print('Illustration image saved to: ' + os.path.join('output/rect', 'Illustration_' + real_img_name))
+
+
+    # DONE illustration code
+
+
 
     # Apply the perspective transformation to the real image
     img_warped = cv2.warpPerspective(real_img, M, output_size)
@@ -163,7 +198,7 @@ def main():
     logger = Logger('output.log', 'output').get_logger()
 
     # Step 4: Get the list of the mask image paths
-    mask_image_paths = os.listdir('segmentations')
+    mask_image_paths = os.listdir('input/segmentations')
     logger.info("Mask image paths: " + str(mask_image_paths))
 
 
@@ -177,9 +212,9 @@ def main():
         try:
             
             # Construct paths
-            mask_img_path = os.path.join('segmentations', mask_img_name)
+            mask_img_path = os.path.join('input/segmentations', mask_img_name)
             real_img_name = mask_img_name.split('.')[0] + '.jpg'
-            real_img_path = os.path.join('photos', real_img_name)
+            real_img_path = os.path.join('input/photos', real_img_name)
 
             # Initialize the logger for the current image
             individual_logger = Logger(f'logs/{real_img_name.split(".")[0]}.log', 'output').get_logger()

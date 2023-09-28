@@ -1,4 +1,4 @@
-# Perspective-Correction-Python
+# Perspective-Correction
 Automated Perspective Correction using [RootPainter](https://github.com/Abe404/root_painter), deep neural networks, transformation matrixes, OpenCV and Numpy
 
 # root_painter

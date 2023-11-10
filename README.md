@@ -62,3 +62,7 @@ Warped image: (1410, 600, 3)
 Warped image: (1410, 600, 3)
 ```
 <img src = "gh-resources/corrected_outline_rect_20230607crop1011.jpg" height ="600" />
+
+
+
+Made in colaboration with [R Ford Denison](https://darwinianagriculture.com/)
